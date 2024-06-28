@@ -12,7 +12,7 @@ with codecs.open("README.md", encoding="utf-8") as fh:
 
 setup(
     name="pypidtune",
-    version="0.0.01",
+    version="0.0.02",
     author="PIDTuningIreland",
     author_email="pidtuningireland@gmail.com",
     description="PID tuner, logger, simulator and process emulator",
