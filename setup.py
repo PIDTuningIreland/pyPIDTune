@@ -1,5 +1,6 @@
 from setuptools import setup, find_packages
 import codecs
+import requests
 
 
 def parse_requirements(filename):
@@ -7,12 +8,21 @@ def parse_requirements(filename):
         return [line.strip() for line in f if line.strip() and not line.startswith("#")]
 
 
+def get_latest_release_version():
+    url = f"https://api.github.com/repos/PIDTuningIreland/pyPIDTune/releases/latest"
+    response = requests.get(url)
+    if response.status_code == 200:
+        return response.json()["tag_name"]
+    else:
+        raise Exception("Cannot Find Version")
+
+
 with codecs.open("README.md", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setup(
     name="pypidtune",
-    version="0.0.03",
+    version=get_latest_release_version(),
     author="PIDTuningIreland",
     author_email="pidtuningireland@gmail.com",
     description="PID tuner, logger, simulator and process emulator",
