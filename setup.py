@@ -27,6 +27,7 @@ setup(
     name="pypidtune",
     version=get_latest_release_version(),
     license="MIT",
+    license_files=("LICENSE",),
     author="PIDTuningIreland",
     author_email="pidtuningireland@gmail.com",
     description="PID tuner, logger, simulator and process emulator",
