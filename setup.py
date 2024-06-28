@@ -1,6 +1,7 @@
 from setuptools import setup, find_packages
 import codecs
-import requests
+import urllib.request
+import json
 
 
 def parse_requirements(filename):
@@ -10,9 +11,11 @@ def parse_requirements(filename):
 
 def get_latest_release_version():
     url = f"https://api.github.com/repos/PIDTuningIreland/pyPIDTune/releases/latest"
-    response = requests.get(url)
-    if response.status_code == 200:
-        return response.json()["tag_name"]
+    req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
+    response = urllib.request.urlopen(req)
+    if response.getcode() == 200:
+        release_info = json.loads(response.read())
+        return release_info["tag_name"]
     else:
         raise Exception("Cannot Find Version")
 
