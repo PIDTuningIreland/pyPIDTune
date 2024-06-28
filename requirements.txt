@@ -1,0 +1,5 @@
+scipy==1.13.0
+numpy==1.26.4
+matplotlib==3.8.4
+pylogix==1.0.1
+asyncua==1.1.0
