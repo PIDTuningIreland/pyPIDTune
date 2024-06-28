@@ -1,16 +1,14 @@
 from setuptools import setup, find_packages
 import codecs
-import os
-
-here = os.path.abspath(os.path.dirname(__file__))
-with codecs.open(os.path.join(here, "README.md"), encoding="utf-8") as fh:
-    long_description = fh.read()
 
 
 def parse_requirements(filename):
     with open(filename, "r") as f:
         return [line.strip() for line in f if line.strip() and not line.startswith("#")]
 
+
+with codecs.open("README.md", encoding="utf-8") as fh:
+    long_description = fh.read()
 
 setup(
     name="pypidtune",
