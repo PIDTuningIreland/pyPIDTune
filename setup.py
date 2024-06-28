@@ -26,6 +26,7 @@ with codecs.open("README.md", encoding="utf-8") as fh:
 setup(
     name="pypidtune",
     version=get_latest_release_version(),
+    license="MIT",
     author="PIDTuningIreland",
     author_email="pidtuningireland@gmail.com",
     description="PID tuner, logger, simulator and process emulator",
