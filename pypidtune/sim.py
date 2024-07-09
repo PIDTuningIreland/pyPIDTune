@@ -230,7 +230,7 @@ class PIDSimulator:
         plt.plot(self.pterm, color="lime", linewidth=2, label="P Term")
         plt.plot(self.iterm, color="orange", linewidth=2, label="I Term")
         plt.plot(self.dterm, color="purple", linewidth=2, label="D Term")
-        plt.xlabel("Time [seconds]")
+        plt.xlabel("Time (seconds)")
         plt.ylabel("Value")
         plt.legend(loc="best")
         plt.grid(True)

@@ -266,7 +266,7 @@ class ProcessEmulator:
         (self.plot_CV,) = self.ax.plot([], [], color="darkgreen", linewidth=2, label="CV")
         (self.plot_PV,) = self.ax.plot([], [], color="blue", linewidth=2, label="PV")
         plt.ylabel("EU")
-        plt.xlabel("Time (min)")
+        plt.xlabel("Time (minutes)")
         plt.suptitle("Live Data")
         plt.legend(loc="upper right")
         mngr = plt.get_current_fig_manager()

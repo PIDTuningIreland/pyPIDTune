@@ -242,7 +242,7 @@ class PIDLogger:
         (self.plot_CV,) = self.ax.plot([], [], color="darkgreen", linewidth=2, label="CV")
         (self.plot_PV,) = self.ax.plot([], [], color="blue", linewidth=2, label="PV")
         plt.ylabel("Value")
-        plt.xlabel("Time (Minutes)")
+        plt.xlabel("Time (minutes)")
         plt.suptitle("Live Data")
         plt.legend(loc="upper right")
         self.scale = int(60000 / int(self.delta_t.get()))

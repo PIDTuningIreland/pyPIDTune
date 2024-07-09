@@ -361,7 +361,7 @@ def calculate_pid_response(model_params, tune_values) -> tuple:
     i_term_array = np.zeros(sim_length)
     d_term_array = np.zeros(sim_length)
     np.random.seed(0)
-    noise = np.random.uniform(-0.2, 0.2, sim_length)
+    noise = np.random.uniform(-0.1, 0.1, sim_length)
 
     process_model = FOPDTModel()
     pid = PIDController()
