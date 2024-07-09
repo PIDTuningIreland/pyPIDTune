@@ -30,7 +30,6 @@ jobs:
       - name: Update version in setup.py
         run: |
           sed -i "s/{{VERSION_PLACEHOLDER}}/${{ env.TAG_NAME }}/g" setup.py
-          cat setup.py  # Optional: print setup.py content for debugging
       - name: Build package
         run: |
           python setup.py sdist bdist_wheel
