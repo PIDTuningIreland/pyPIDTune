@@ -34,7 +34,8 @@ pid_logger.root.mainloop()
    
 ```
 
-![Logger](/screenshots/logger.png?raw=true "PID Logger")
+
+![Logger](https://raw.githubusercontent.com/PIDTuningIreland/pyPIDTune/main/screenshots/logger.png)
 
 
 
@@ -49,7 +50,8 @@ pid_simulator.root.mainloop()
     
 ```
 
-![Simulator](/screenshots/simulator.png?raw=true "PID Simulator")
+
+![Simulator](https://raw.githubusercontent.com/PIDTuningIreland/pyPIDTune/main/screenshots/simulator.png)
 
 
 
@@ -65,7 +67,7 @@ pid_emulator.root.mainloop()
 ```
 
 
-![Emulator](/screenshots/emulator.png?raw=true "Process Emulator")
+![Emulator](https://raw.githubusercontent.com/PIDTuningIreland/pyPIDTune/main/screenshots/emulator.png)
 
 
 ---
