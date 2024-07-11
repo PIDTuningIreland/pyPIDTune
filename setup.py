@@ -33,6 +33,7 @@ setup(
         "Programming Language :: Python :: 3.12",
         "Operating System :: MacOS :: MacOS X",
         "Operating System :: Microsoft :: Windows",
+        "Operating System :: POSIX :: Linux",
     ],
     install_requires=parse_requirements("requirements.txt"),
 )
