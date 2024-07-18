@@ -71,3 +71,32 @@ pid_emulator.root.mainloop()
 
 
 ---
+
+
+# **PID Tuner**
+
+To launch, use:
+```
+import pypidtune
+
+pid_tuner = pypidtune.PIDTuner()
+pid_tuner.root.mainloop()
+    
+```
+
+
+![Tuner](https://raw.githubusercontent.com/PIDTuningIreland/pyPIDTune/main/screenshots/tuner.png)
+
+
+---
+
+# **beoTune© Adapative Auto-Tuner**
+
+
+
+https://github.com/user-attachments/assets/46a9ba28-b4ca-4fb7-ad83-43ef1c42f0e6
+
+
+```
+Premium Feature - https://github.com/sponsors/PIDTuningIreland
+```
