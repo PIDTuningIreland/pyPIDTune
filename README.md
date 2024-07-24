@@ -97,6 +97,6 @@ pid_tuner.root.mainloop()
 https://github.com/user-attachments/assets/46a9ba28-b4ca-4fb7-ad83-43ef1c42f0e6
 
 
-```
-Premium Feature - https://github.com/sponsors/PIDTuningIreland
-```
+
+> Premium Feature -  [https://github.com/sponsors/PIDTuningIreland](https://github.com/sponsors/PIDTuningIreland)
+
