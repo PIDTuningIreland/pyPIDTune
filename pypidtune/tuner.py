@@ -15,7 +15,6 @@ limitations under the License.
 """
 
 import os
-import csv
 import threading
 from tkinter import filedialog as fd
 import numpy as np
